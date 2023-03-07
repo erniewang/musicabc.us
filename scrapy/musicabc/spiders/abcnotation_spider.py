@@ -7,13 +7,15 @@ from musicabc.items import MusicabcItem
 from musicabc.db import Db
 
 NUM_INDEX_PAGES = 1  # 1 for testing, 1758 for real
+START_INDEX_PAGE = 0
 
 
 class AbcnotationComSpider(Spider):
     name = "abcnotation_com"
     allowed_domains = ['abcnotation.com']
     start_urls = [
-        'https://abcnotation.com/browseTunes?n={:04d}'.format(i) for i in range(NUM_INDEX_PAGES)
+        'https://abcnotation.com/browseTunes?n={:04d}'.format(i)
+        for i in range(START_INDEX_PAGE, START_INDEX_PAGE + NUM_INDEX_PAGES)
     ]
 
     def get_file_path(self, url) -> Path:

@@ -1,3 +1,9 @@
+# for scrapy
 scrapy==2.8.0
 python-dotenv==1.0.0
 psycopg[binary]==3.1.8
+# for backend
+fastapi==0.92.0
+uvicorn==0.20.0
+SQLAlchemy==2.0.5.post1
+
