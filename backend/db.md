@@ -1,6 +1,6 @@
 # Database
 
-The `sheets` table was created in scrapy project.  The table creating statement is in [db.py](../crapy/musicabc/db.py).
+The `sheets` table was created in scrapy project.  The table creating statement is in [db.py](../scrapy/musicabc/db.py).
 
 ## Create Gin index for title
 
