@@ -33,7 +33,7 @@ const Search = ({ setAbc }) => {
   const onChange = (e) => {
     const value = e.target.value;
     if (value.length > 1) {
-      fetch(`http://localhost:8085/api/search/${value}`)
+      fetch(`/api/search/${value}`)
         .then((res) => res.json())
         .then((json) => maybeSetChoices(json))
         .then((err) => console.log(err)); 
@@ -55,7 +55,7 @@ const Search = ({ setAbc }) => {
       text: suggestion.title,
       suggestions: [],
     })
-    fetch(`http://localhost:8085/api/get/${suggestion.id}`)
+    fetch(`/api/get/${suggestion.id}`)
       .then((res) => res.json())
       .then((json) => maybeSetAbc(json))
       .then((err) => console.log(err)); 
