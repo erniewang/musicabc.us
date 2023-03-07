@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.tadd  ul::before{
+  content: '';
+}
+  
+.tadd  ul{
+  position: absolute;
+  list-style-type: none;
+  text-align: left;
+  margin-left: 9.5vw;
+  margin-top: -2.5vh;
+  padding: 0;
+  border: 1px solid gray;
+}
+  
+.tadd  li{
+  background: white;
+  padding: 10px 5px ;
+  cursor: pointer;
+}
+  
+.tadd  li:hover{
+  background: lightgray;
+  text-decoration: underline;
+}
